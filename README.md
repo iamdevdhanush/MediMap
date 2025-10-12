@@ -1,73 +1,131 @@
-# Welcome to your Lovable project
+  # ![MediMap Logo](https://via.placeholder.com/50) MediMap
 
-## Project info
+**Real-Time Community Healthcare Resource Tracker | 100% Free | Fully Responsive**
 
-**URL**: https://lovable.dev/projects/2788b7e1-a3b1-49f1-af89-8296ec2e4f62
+---
 
-## How can I edit this code?
+## 🚀 Overview
+MediMap is a **community-driven platform** for finding and sharing **healthcare resources** like blood banks, oxygen, medicines, ICU beds, and vaccination centers.  
 
-There are several ways of editing your application.
+- Fully **digital & free**  
+- **AI-verified** posts for authenticity  
+- **Responsive** on mobile, tablet, and desktop  
+- Gamified **Credibility Points & Leaderboard**  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2788b7e1-a3b1-49f1-af89-8296ec2e4f62) and start prompting.
+## 🌟 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Real-Time Resource Tracking** – Find nearby hospitals, blood banks, oxygen cylinders, medicines, and ICU beds  
+- **AI Verification & Categorization** – Ensures accuracy of posts  
+- **Community Contributions & Alerts** – Users can post and confirm resource availability  
+- **Leaderboard & Gamification** – Credibility points encourage participation  
+- **Responsive UI** – Works seamlessly across all devices  
+- **Zero Cost** – Built completely free using Lovable AI  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📱 Pages / Screens
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Page | Purpose |
+|------|---------|
+| **Home Feed / Map** | Browse nearby resources dynamically |
+| **Post Resource** | Add blood, oxygen, medicine, or bed info |
+| **Blood Bank / Emergency** | Specialized listing of critical resources |
+| **Profile** | Track contributions & points |
+| **Leaderboard** | Top contributors by Credibility Points |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Database Schema
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Users**  
+- `id` (string) – Unique user ID  
+- `name` (string) – Username  
+- `location` (string) – City or Pin code  
+- `credibility_points` (integer) – Total points  
+- `rank` (integer) – Leaderboard rank  
+- `created_at` (datetime)  
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Resources**  
+- `id` (string) – Unique resource ID  
+- `owner_id` (string) – User posting resource  
+- `type` (string) – Blood Bank / Oxygen / Medicine / Bed / Vaccine  
+- `name` (string) – Resource name  
+- `location` (string) – City / Pin code  
+- `quantity` (string) – Availability info  
+- `verified` (boolean) – AI verified  
+- `last_updated` (datetime)  
+- `ai_notes` (text) – AI suggestions / flags  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**Claims**  
+- `id` (string) – Claim ID  
+- `resource_id` (string) – Linked resource  
+- `claimer_id` (string) – User claiming or confirming  
+- `status` (string) – Pending / Confirmed  
+- `created_at` (datetime)  
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🤖 AI Workflows
 
-**Use GitHub Codespaces**
+1. **AI Verify & Categorize** – Validates posts and assigns category  
+2. **Claim Resource Workflow** – Updates availability & awards points  
+3. **Leaderboard Update** – Dynamically ranks users  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🎮 Gamification
 
-This project is built with:
+- Earn points for posting verified resources, confirming availability, and daily activity streaks  
+- Badges: “Life Saver”, “Community Hero”, “Verified Contributor”  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 💻 Tech Stack
 
-Simply open [Lovable](https://lovable.dev/projects/2788b7e1-a3b1-49f1-af89-8296ec2e4f62) and click on Share -> Publish.
+- **Lovable AI** – Verification & categorization  
+- **Lovable Database** – Stores users, resources, claims, points  
+- **Responsive UI** – Works on mobile, tablet, and desktop  
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🚀 How to Use
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Open MediMap on your device (mobile, tablet, or desktop).  
+2. Browse nearby resources via **Home Feed** or **Map View**.  
+3. Post a new resource by clicking **“Post Resource”**.  
+4. Confirm or claim resources to earn **Credibility Points**.  
+5. Check **Leaderboard** to see top contributors.  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 🆓 Cost
+
+| Component | Cost |
+|-----------|------|
+| Lovable Platform | ✅ Free |
+| AI Verification & Categorization | ✅ Free |
+| Database | ✅ Free |
+| Hosting | ✅ Free |
+| APIs | ❌ None |
+| **Total** | ₹0 |
+
+---
+
+## 🌍 Impact
+
+- Provides **real-time healthcare info** to communities in need  
+- Reduces panic during emergencies  
+- Helps low-income populations access **free medical resources**  
+- Scales nationwide with zero cost  
+
+---
+
+## 🏷️ Taglines
+
+- “Real-Time Community Healthcare, Free & Verified.”  
+- “Find Blood, Oxygen, Medicine, or ICU Beds Instantly.”  
+- “MediMap — Saving Lives, One Resource at a Time.”  
+
+---
