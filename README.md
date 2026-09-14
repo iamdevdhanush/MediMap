@@ -1,4 +1,4 @@
- MediMap
+MediMap
 
 **Real-Time Community Healthcare Resource Tracker | 100% Free | Fully Responsive**
 
